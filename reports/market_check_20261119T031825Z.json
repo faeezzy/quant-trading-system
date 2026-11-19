@@ -1,0 +1,386 @@
+{
+  "generated_at_utc": "2026-11-19T03:18:17.942032+00:00",
+  "markets": {
+    "BTCIDR": {
+      "raw": {
+        "pair": {
+          "id": "btcidr",
+          "symbol": "BTCIDR",
+          "base_currency": "idr",
+          "traded_currency": "btc",
+          "traded_currency_unit": "BTC",
+          "description": "BTC/IDR",
+          "ticker_id": "btc_idr",
+          "url_logo": "https://static.indodax.com/8c26754/v2/logo/svg/color/btc.svg",
+          "url_logo_png": "https://static.indodax.com/8c26754/v2/logo/png/color/btc.png",
+          "coingecko_id": "bitcoin",
+          "volume_precision": 0,
+          "price_round": 8,
+          "trade_min_base_currency": 10000,
+          "is_maintenance": 0,
+          "is_market_suspended": 0,
+          "cmc_id": 1,
+          "pricescale": 1000,
+          "price_precision": 1000,
+          "trade_min_traded_currency": 8.73e-06,
+          "trade_fee_percent": 0.2,
+          "trade_fee_percent_taker": 0.2,
+          "trade_fee_percent_maker": 0.1,
+          "disable_deposit": false,
+          "has_memo": false,
+          "memo_name": false,
+          "quantity_increment": 1e-08
+        },
+        "tick_size": "1000",
+        "book_ticker": {
+          "symbol": "BTCIDR",
+          "bidPrice": "1146133000",
+          "bidQty": "0.07560787",
+          "askPrice": "1147196000",
+          "askQty": "4.15212648"
+        },
+        "depth_top3": {
+          "bids": [
+            [
+              "1146133000",
+              "0.07560787"
+            ],
+            [
+              "1145650000",
+              "0.12757755"
+            ],
+            [
+              "1145649000",
+              "7.39009350"
+            ]
+          ],
+          "asks": [
+            [
+              "1147196000",
+              "4.15212648"
+            ],
+            [
+              "1147197000",
+              "0.00030636"
+            ],
+            [
+              "1147476000",
+              "0.06345500"
+            ]
+          ]
+        },
+        "ohlc_15_last2": [
+          {
+            "Time": 1795057200,
+            "Open": 1147725000,
+            "High": 1148550000,
+            "Low": 1145000000,
+            "Close": 1145520000,
+            "Volume": "0.11600000"
+          },
+          {
+            "Time": 1795058100,
+            "Open": 1145077000,
+            "High": 1147135000,
+            "Low": 1144742000,
+            "Close": 1145648000,
+            "Volume": "0.09992572"
+          }
+        ],
+        "ohlc_60_last2": [
+          {
+            "Time": 1795053600,
+            "Open": 1152014000,
+            "High": 1152014000,
+            "Low": 1147196000,
+            "Close": 1147745000,
+            "Volume": "1.10930239"
+          },
+          {
+            "Time": 1795057200,
+            "Open": 1147725000,
+            "High": 1148550000,
+            "Low": 1144742000,
+            "Close": 1145648000,
+            "Volume": "0.21592572"
+          }
+        ],
+        "ohlc_240_last2": [
+          {
+            "Time": 1795032000,
+            "Open": 1149994000,
+            "High": 1159775000,
+            "Low": 1138954000,
+            "Close": 1156563000,
+            "Volume": "4.05448296"
+          },
+          {
+            "Time": 1795046400,
+            "Open": 1156103000,
+            "High": 1159775000,
+            "Low": 1142515000,
+            "Close": 1145648000,
+            "Volume": "3.05437465"
+          }
+        ]
+      },
+      "checks": {
+        "metadata": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "trade_min_base_currency": 10000,
+            "trade_min_traded_currency": 8.73e-06,
+            "price_precision": 1000,
+            "quantity_increment": 1e-08,
+            "trade_fee_percent_taker": 0.2,
+            "trade_fee_percent_maker": 0.1
+          }
+        },
+        "book": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "bid": "1146133000",
+            "ask": "1147196000",
+            "mid": "1146664500",
+            "spread_pct": 0.0927,
+            "depth_levels": 20,
+            "bid_depth_idr": 9434264448,
+            "ask_depth_idr": 6654830794
+          }
+        },
+        "ohlc_15": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "count": 301,
+            "closed": 300,
+            "missing": 0,
+            "last_closed_open_time": 1795057200,
+            "open_candle_present": true
+          }
+        },
+        "ohlc_60": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "count": 301,
+            "closed": 300,
+            "missing": 0,
+            "last_closed_open_time": 1795053600,
+            "open_candle_present": true
+          }
+        },
+        "ohlc_240": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "count": 301,
+            "closed": 300,
+            "missing": 0,
+            "last_closed_open_time": 1795032000,
+            "open_candle_present": true
+          }
+        }
+      },
+      "tradable": true
+    },
+    "ETHIDR": {
+      "raw": {
+        "pair": {
+          "id": "ethidr",
+          "symbol": "ETHIDR",
+          "base_currency": "idr",
+          "traded_currency": "eth",
+          "traded_currency_unit": "ETH",
+          "description": "ETH/IDR",
+          "ticker_id": "eth_idr",
+          "url_logo": "https://static.indodax.com/8c26754/v2/logo/svg/color/eth.svg",
+          "url_logo_png": "https://static.indodax.com/8c26754/v2/logo/png/color/eth.png",
+          "coingecko_id": "ethereum",
+          "volume_precision": 0,
+          "price_round": 8,
+          "trade_min_base_currency": 10000,
+          "is_maintenance": 0,
+          "is_market_suspended": 0,
+          "cmc_id": 1027,
+          "pricescale": 1000,
+          "price_precision": 1000,
+          "trade_min_traded_currency": 0.00030847,
+          "trade_fee_percent": 0.2,
+          "trade_fee_percent_taker": 0.2,
+          "trade_fee_percent_maker": 0.1,
+          "disable_deposit": false,
+          "has_memo": false,
+          "memo_name": false,
+          "quantity_increment": 1e-08
+        },
+        "tick_size": "1000",
+        "book_ticker": {
+          "symbol": "ETHIDR",
+          "bidPrice": "32414000",
+          "bidQty": "2.01032019",
+          "askPrice": "32418000",
+          "askQty": "0.00481877"
+        },
+        "depth_top3": {
+          "bids": [
+            [
+              "32414000",
+              "2.01032019"
+            ],
+            [
+              "32406000",
+              "45.65538261"
+            ],
+            [
+              "32390000",
+              "11.25670000"
+            ]
+          ],
+          "asks": [
+            [
+              "32418000",
+              "0.00481877"
+            ],
+            [
+              "32419000",
+              "0.00864282"
+            ],
+            [
+              "32439000",
+              "34.74214130"
+            ]
+          ]
+        },
+        "ohlc_15_last2": [
+          {
+            "Time": 1795057200,
+            "Open": 32470000,
+            "High": 32493000,
+            "Low": 32356000,
+            "Close": 32356000,
+            "Volume": "1.15607746"
+          },
+          {
+            "Time": 1795058100,
+            "Open": 32418000,
+            "High": 32418000,
+            "Low": 32418000,
+            "Close": 32418000,
+            "Volume": "0.01847026"
+          }
+        ],
+        "ohlc_60_last2": [
+          {
+            "Time": 1795053600,
+            "Open": 32620000,
+            "High": 32620000,
+            "Low": 32410000,
+            "Close": 32450000,
+            "Volume": "3.09074007"
+          },
+          {
+            "Time": 1795057200,
+            "Open": 32470000,
+            "High": 32493000,
+            "Low": 32356000,
+            "Close": 32418000,
+            "Volume": "1.17454772"
+          }
+        ],
+        "ohlc_240_last2": [
+          {
+            "Time": 1795032000,
+            "Open": 32185000,
+            "High": 32653000,
+            "Low": 32001000,
+            "Close": 32599000,
+            "Volume": "11.21002624"
+          },
+          {
+            "Time": 1795046400,
+            "Open": 32531000,
+            "High": 32770000,
+            "Low": 32346000,
+            "Close": 32418000,
+            "Volume": "11.49982077"
+          }
+        ]
+      },
+      "checks": {
+        "metadata": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "trade_min_base_currency": 10000,
+            "trade_min_traded_currency": 0.00030847,
+            "price_precision": 1000,
+            "quantity_increment": 1e-08,
+            "trade_fee_percent_taker": 0.2,
+            "trade_fee_percent_maker": 0.1
+          }
+        },
+        "book": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "bid": "32414000",
+            "ask": "32418000",
+            "mid": "32416000",
+            "spread_pct": 0.01234,
+            "depth_levels": 20,
+            "bid_depth_idr": 2300550554,
+            "ask_depth_idr": 2863957904
+          }
+        },
+        "ohlc_15": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "count": 301,
+            "closed": 300,
+            "missing": 0,
+            "last_closed_open_time": 1795057200,
+            "open_candle_present": true
+          }
+        },
+        "ohlc_60": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "count": 301,
+            "closed": 300,
+            "missing": 0,
+            "last_closed_open_time": 1795053600,
+            "open_candle_present": true
+          }
+        },
+        "ohlc_240": {
+          "ok": true,
+          "issues": [],
+          "metrics": {
+            "count": 301,
+            "closed": 300,
+            "missing": 0,
+            "last_closed_open_time": 1795032000,
+            "open_candle_present": true
+          }
+        }
+      },
+      "tradable": true
+    }
+  },
+  "server_time": {
+    "timezone": "UTC",
+    "server_time": 1795058298058
+  },
+  "clock": {
+    "ok": true,
+    "issues": [],
+    "metrics": {
+      "clock_skew_s": 0.034
+    }
+  }
+}
