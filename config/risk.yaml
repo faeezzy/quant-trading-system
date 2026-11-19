@@ -1,0 +1,15 @@
+# Initial engineering limits (spec Part 6). Changes must be documented.
+initial_capital_idr: 1000000
+max_active_allocation_idr: 500000
+cash_reserve_idr: 400000
+fee_buffer_idr: 100000
+
+risk_per_trade_pct: 0.25
+max_concurrent_positions: 1
+max_open_entry_orders: 1
+max_daily_loss_pct: 1.0
+max_weekly_loss_pct: 2.0
+max_drawdown_pct_of_initial: 5.0
+leverage: 0
+
+skip_trade_if_min_order_exceeds_risk: true

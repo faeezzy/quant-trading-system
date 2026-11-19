@@ -1,0 +1,8 @@
+project: indodax-quant
+version: 0.1.0
+milestone: 1-read-only-market-data
+trading_enabled: false      # hard off; nothing in milestone 1 can place orders
+paths:
+  historical_data: data/historical
+  logs: logs
+  reports: reports

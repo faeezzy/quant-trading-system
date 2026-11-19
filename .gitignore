@@ -1,0 +1,31 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Runtime data (persisted via volumes, not git)
+data/historical/*
+!data/historical/.gitkeep
+logs/
+reports/
+*.db
+*.sqlite
+*.lock
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

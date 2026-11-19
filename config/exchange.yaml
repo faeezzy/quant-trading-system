@@ -1,0 +1,35 @@
+# Source: github.com/btcid/indodax-official-api-docs (read 2026-11-19)
+# Fees, minimum order sizes and precision are NOT hardcoded here.
+# They are fetched live from /api/pairs and /api/price_increments.
+
+exchange: indodax
+
+endpoints:
+  legacy_public_base: https://indodax.com          # /api/pairs, /api/price_increments, /tradingview/history_v2
+  tapi_v2_public_base: https://api.indodax.com     # /api/v2/ticker/bookTicker, /api/v2/depth
+
+rate_limits_per_minute:   # documented limits; we stay well below them
+  legacy_public: 180
+  tapi_v2_public: 300
+
+http:
+  timeout_seconds: 10
+  max_retries: 3
+  backoff_base_seconds: 1.0
+  min_interval_seconds: 0.5   # client-side throttle (~120 req/min max)
+
+markets:
+  - symbol: BTCIDR
+    pair_id: btcidr
+  - symbol: ETHIDR
+    pair_id: ethidr
+
+data_quality:
+  max_ticker_age_seconds: 60
+  max_spread_pct: 0.5          # above this the market is flagged not tradable
+  depth_levels: 20
+
+# Documented limitation (Trade API V2 Private, POST order):
+# type must be LIMIT or MARKET; STOP_LIMIT returns "stop_limit_not_available".
+# => stop-loss must be a locally monitored synthetic stop.
+native_stop_supported_v2: false
