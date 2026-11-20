@@ -138,3 +138,25 @@ class PaperBroker:
     def set_last_decision_day(self, day_ts: int) -> None:
         self.state["last_decision_day"] = day_ts
         self._save()
+
+    # ---------- halt control (kill switch / owner reset) ----------
+    def halt(self, reason: str) -> bool:
+        """Stop new entries (kill switch / owner). Idempotent; returns True if state changed.
+
+        Does NOT close positions or cancel stops: the caller decides that. Stops keep
+        being managed while halted (spec 3, 10)."""
+        if self.state["halted"]:
+            return False
+        self.state["halted"] = True
+        self._save()
+        self.event("CRITICAL", f"HALTED by {reason}; new entries stopped until owner reset")
+        return True
+
+    def unhalt(self, reason: str) -> bool:
+        """Owner re-enable after a halt (manual action, spec 3). Returns True if state changed."""
+        if not self.state["halted"]:
+            return False
+        self.state["halted"] = False
+        self._save()
+        self.event("WARN", f"halt cleared by {reason}; new entries allowed")
+        return True
