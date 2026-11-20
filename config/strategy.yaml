@@ -12,6 +12,7 @@ indicators:
   volume_sma: 20
 entry:
   min_reward_risk: 1.8
+  target_atr_mult: 3.0         # hypothesis: nominal target for the ex-ante net R:R check (spec defines none)
 exit:
   stop_atr_mult: 1.5
   trailing_atr_mult: 2.0       # hypothesis — must be validated in backtest

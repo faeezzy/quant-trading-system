@@ -24,6 +24,17 @@ markets:
   - symbol: ETHIDR
     pair_id: ethidr
 
+# Research-only universe (backtests). Never traded until each pair passes check_markets
+# and its own validation. Existence on INDODAX is verified at backfill time, not assumed.
+research_markets:
+  - {symbol: BTCIDR, pair_id: btcidr}
+  - {symbol: ETHIDR, pair_id: ethidr}
+  - {symbol: SOLIDR, pair_id: solidr}
+  - {symbol: XRPIDR, pair_id: xrpidr}
+  - {symbol: BNBIDR, pair_id: bnbidr}
+  - {symbol: DOGEIDR, pair_id: dogeidr}
+  - {symbol: ADAIDR, pair_id: adaidr}
+
 data_quality:
   max_ticker_age_seconds: 60
   max_spread_pct: 0.5          # above this the market is flagged not tradable

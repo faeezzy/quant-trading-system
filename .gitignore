@@ -29,3 +29,10 @@ reports/
 Thumbs.db
 .vscode/
 .idea/
+
+# account data — never commit, even with -f habits
+reports/private/
+
+# paper trading runtime
+data/paper.db
+paper_trade.lock
