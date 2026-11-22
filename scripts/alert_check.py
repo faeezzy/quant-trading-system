@@ -20,6 +20,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from dotenv import load_dotenv  # noqa: E402
+
 from core.alerts import Notifier  # noqa: E402
 from scripts import status  # noqa: E402
 
@@ -80,6 +82,7 @@ def run(argv: list[str] | None = None) -> int:
     ap.add_argument("--test", action="store_true", help="send a test alert and exit")
     args = ap.parse_args(argv)
 
+    load_dotenv(ROOT / ".env")        # so TELEGRAM_* from .env reach the Notifier
     notifier = Notifier()
     if args.test:
         ok = notifier.send("INFO", "test alert — if you see this, alerts work ✅")
